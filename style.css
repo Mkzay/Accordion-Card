@@ -5,12 +5,11 @@
 }
 
 body {
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Kumbh Sans', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     background-color: hsl(273, 75%, 66%);
 }
 
@@ -23,6 +22,26 @@ body {
     border-radius: 20px;
     width: 90%;
     padding: 30px;
+    background-image: url(images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin: 150px 0 70px 0;
+}
+
+.left {
+    width: 277.5px;
+    height: 100px;
+}
+
+.left .mobile {
+    width: 270px;
+    position: relative;
+    top: -160px;
+    right: -5px;
+}
+
+.left .desktop {
+    width: 0;
 }
 
 .right .title {
@@ -34,13 +53,18 @@ body {
 }
 
 .right .content-container .question {
-    font-weight: 700;
+    font-weight: 400;
     padding: 18px 0px;
     cursor: pointer;
     color: hsl(237, 12%, 33%);
     border-bottom: 1px solid hsl(240, 5%, 91%);
 
     position: relative;
+    transition: .7s;
+}
+
+.right .content-container .question:hover {
+    color: hsl(14, 88%, 65%);
 }
 
 .right .content-container img {
@@ -56,6 +80,48 @@ body {
     line-height: 1.5;
     width: 100%;
 
-    /*height: 0px ;
-    overflow: hidden;*/
+    height: 0px ;
+    overflow: hidden;
+}
+
+.container .content-container.active .answer {
+    height: 100%;
+}
+
+.container .content-container.active .question {
+    color: hsl(238, 29%, 16%);
+    font-weight: 700;
+}
+
+.container .content-container.active img {
+    transform: scaleY(-1);
+}
+
+@media screen and (min-width: 900px) {
+    .container {
+        flex-direction: row;
+        background-image: url(images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: -90px -10px;
+        background-size: contain;
+    }
+
+    .left {
+        width: 420px;
+    }
+
+    .left .mobile {
+        width: 0;
+    }
+
+    .left .desktop {
+        width: 440px;
+        position: relative;
+        top: -150px;
+        left: -90px;
+    }
+
+    .right .title {
+        text-align: left;
+    }
 }
