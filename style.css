@@ -34,9 +34,6 @@ body {
 }
 
 .container .left .mobile {
-    /*position: absolute;
-    top: 0px;
-    left: 79px;*/
     width: 220px;
     transform:translateY(-7.6rem);
 }
@@ -132,9 +129,14 @@ body {
         transform: translateX(-9.5rem) translateY(-15.5rem);
     }
 
+    .right {
+        margin-right: 10px;
+    }
+
     .right .title {
         text-align: left;
         margin-left: -1.2px;
+        margin-top: 50px;
     }
 }
 
@@ -170,9 +172,14 @@ body {
         transform: translateX(-9.5rem) translateY(-15.5rem);
     }
 
+    .right {
+        margin-right: 90px;
+    }
+
     .right .title {
         text-align: left;
         margin-left: -1.2px;
+        margin-top: 50px;
     }
 
 }
