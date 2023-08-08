@@ -5,11 +5,9 @@
 }
 
 body {
-    /*height: 170vh;*/
     height: calc(100vh + 200px);
     display: flex;
     align-items: start;
-    /*align-items: center;*/
     justify-content: center;
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 14px;
@@ -28,9 +26,8 @@ body {
     background-image: url(images/bg-pattern-mobile.svg);
     background-repeat: no-repeat;
     background-position: top center;
-    margin: auto;
+    margin: auto 1rem;
     margin-top: 120px;
-    /*margin: 200px 30px 10px 30px;*/
 }
 
 .left, .right {
